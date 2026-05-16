@@ -57,7 +57,7 @@ body { font-family: 'Comfortaa', sans-serif; background: #fff; color: var(--text
 .hero-inner { max-width: 1320px; margin: 0 auto; display: grid; grid-template-columns: 1fr; gap: 56px; align-items: center; }
 .hero-badge { display: inline-flex; align-items: center; gap: 8px; background: var(--offwhite); border-radius: 9999px; padding: 8px 18px; margin-bottom: 28px; }
 .pulse-dot { width: 8px; height: 8px; border-radius: 9999px; background: #4ade80; flex-shrink: 0; animation: pulse 1.5s ease-in-out infinite; }
-@keyframes pulse { 0%,100%{opacity:1;transform:scale(1);}50%{opacity:0.5;transform:scale(0.8);} }
+@pragma pulse { 0%,100%{opacity:1;transform:scale(1);}50%{opacity:0.5;transform:scale(0.8);} }
 .hero-h1 { font-family: 'Playfair Display', serif; font-size: clamp(2.8rem, 7vw, 5.2rem); font-weight: 900; line-height: 1.02; margin-bottom: 36px; color: var(--text-dark); }
 .hero-h1 .accent { color: var(--orange); font-style: italic; }
 .search-bar { display: flex; align-items: center; background: var(--offwhite); border-radius: 9999px; overflow: hidden; box-shadow: 0 4px 24px rgba(0,0,0,0.05); margin-bottom: 36px; max-width: 480px; border: 2px solid transparent; transition: border-color 0.2s; }
@@ -189,7 +189,6 @@ body { font-family: 'Comfortaa', sans-serif; background: #fff; color: var(--text
 </head>
 <body>
 
-<!-- ========= HEADER ========= -->
 <header id="header">
   <div class="nav-inner">
     <a href="#hero" class="logo-link">
@@ -232,11 +231,9 @@ body { font-family: 'Comfortaa', sans-serif; background: #fff; color: var(--text
   </div>
 </header>
 
-<!-- ========= HERO ========= -->
 <section id="hero">
   <div class="hero-inner">
 
-    <!-- LEFT -->
     <div class="fade-up">
       <div class="hero-badge">
         <div class="pulse-dot"></div>
@@ -269,28 +266,23 @@ body { font-family: 'Comfortaa', sans-serif; background: #fff; color: var(--text
       </div>
     </div>
 
-    <!-- RIGHT -->
     <div class="hero-right fade-up-d2">
       <div class="hero-glow"></div>
       <div class="plate-ring"></div>
       <div class="hero-main-img">
-        <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=800&q=80" alt="Signature dish">
+        <img src="https://images.unsplash.com/photo-1585938338392-50a59970d2ee?auto=format&fit=crop&w=800&q=80" alt="Signature Butter Paneer">
       </div>
-      <!-- Float 1 -->
       <div class="hero-float" style="width:86px;height:86px;bottom:24px;right:16px;z-index:20;animation-delay:-1.5s;">
-        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=200&q=80" alt="Dish" style="width:100%;height:100%;object-fit:cover;">
+        <img src="https://images.unsplash.com/photo-1601050690597-df056fb4ce78?auto=format&fit=crop&w=200&q=80" alt="Murthal Aloo Paratha" style="width:100%;height:100%;object-fit:cover;">
       </div>
-      <!-- Float 2 -->
       <div class="hero-float" style="width:86px;height:86px;top:24px;left:14px;z-index:20;animation-delay:-3s;">
-        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=200&q=80" alt="Dish" style="width:100%;height:100%;object-fit:cover;">
+        <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=200&q=80" alt="Veg Biryani" style="width:100%;height:100%;object-fit:cover;">
       </div>
-      <!-- Float 3 -->
       <div class="hero-float" style="width:70px;height:70px;bottom:-8px;left:8px;z-index:20;animation-delay:-2s;opacity:0.85;">
-        <img src="https://images.unsplash.com/photo-1611080626919-7cf5a9dbab5b?auto=format&fit=crop&w=200&q=80" alt="Dish" style="width:100%;height:100%;object-fit:cover;">
+        <img src="https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=200&q=80" alt="Kulhad Masala Tea" style="width:100%;height:100%;object-fit:cover;">
       </div>
-      <!-- Chip -->
       <div class="hero-chip" style="top:-8px;right:24px;">
-        <span style="font-size:1.3rem;">🍽️</span>
+        <span style="font-size:1.3rem;">🫓</span>
         <div>
           <div style="font-size:0.72rem;font-weight:800;color:#111;line-height:1.2;">Chef's Special</div>
           <div style="font-size:0.66rem;color:#aaa;">Today's Pick</div>
@@ -300,7 +292,6 @@ body { font-family: 'Comfortaa', sans-serif; background: #fff; color: var(--text
   </div>
 </section>
 
-<!-- ========= PROCESS ========= -->
 <section id="process">
   <div class="process-inner">
     <div style="text-align:center;margin-bottom:0;">
@@ -308,7 +299,6 @@ body { font-family: 'Comfortaa', sans-serif; background: #fff; color: var(--text
       <h2 class="section-title fp">Fresh, Fast &amp; <span style="color:var(--orange);font-style:italic;">Flavourful</span></h2>
     </div>
     <div class="process-grid">
-      <!-- Card 1 -->
       <div class="process-card fade-up">
         <div class="process-num">01</div>
         <div class="process-icon-bg">
@@ -318,7 +308,6 @@ body { font-family: 'Comfortaa', sans-serif; background: #fff; color: var(--text
         <div class="process-h">WE MAKE</div>
         <p class="process-p">Our chefs craft every dish from scratch using authentic spices, fresh vegetables, and age-old Dhaba recipes passed down through generations.</p>
       </div>
-      <!-- Card 2 – Featured -->
       <div class="process-card featured fade-up-d1">
         <div class="process-num" style="color:#fff;">02</div>
         <div class="process-icon-bg">
@@ -328,7 +317,6 @@ body { font-family: 'Comfortaa', sans-serif; background: #fff; color: var(--text
         <div class="process-h">WE DELIVER</div>
         <p class="process-p">Piping hot, packed with love. From our kitchen to your table — we ensure every plate arrives exactly as it left the tandoor.</p>
       </div>
-      <!-- Card 3 -->
       <div class="process-card fade-up-d2">
         <div class="process-num">03</div>
         <div class="process-icon-bg">
@@ -342,7 +330,6 @@ body { font-family: 'Comfortaa', sans-serif; background: #fff; color: var(--text
   </div>
 </section>
 
-<!-- ========= MENU ========= -->
 <section id="menu">
   <div class="menu-inner">
     <div style="text-align:center;margin-bottom:40px;">
@@ -350,7 +337,6 @@ body { font-family: 'Comfortaa', sans-serif; background: #fff; color: var(--text
       <h2 class="section-title fp">121 Dishes. <span style="color:var(--orange);font-style:italic;">One Soul.</span></h2>
     </div>
 
-    <!-- Category Tabs -->
     <div class="cat-scroll" id="catScroll">
       <button class="cat-btn active" data-cat="all">All Items</button>
       <button class="cat-btn" data-cat="paratha">🫓 Murthal Paratha</button>
@@ -374,10 +360,8 @@ body { font-family: 'Comfortaa', sans-serif; background: #fff; color: var(--text
       <button class="cat-btn" data-cat="desserts">🍮 Sweet Sensations</button>
     </div>
 
-    <!-- Grid -->
     <div class="menu-grid" id="menuGrid"></div>
 
-    <!-- Pagination Dots -->
     <div class="page-dots" id="pageDots">
       <button class="page-dot active" data-page="0"></button>
       <button class="page-dot" data-page="1"></button>
@@ -387,12 +371,10 @@ body { font-family: 'Comfortaa', sans-serif; background: #fff; color: var(--text
   </div>
 </section>
 
-<!-- ========= FOOTER ========= -->
 <footer id="footer">
   <div class="footer-inner">
     <div class="footer-grid">
 
-      <!-- Brand -->
       <div>
         <div class="footer-brand-name">RARA Dhaba</div>
         <p class="footer-tagline">Taste Authentic Indian Flavors at Murthal! A warm, welcoming space that celebrates India's culinary heritage. LGBTQ+ friendly. 🏳️‍🌈</p>
@@ -409,7 +391,6 @@ body { font-family: 'Comfortaa', sans-serif; background: #fff; color: var(--text
         </div>
       </div>
 
-      <!-- Quick Links -->
       <div>
         <div class="footer-section-title">Quick Links</div>
         <a href="#hero" class="footer-link">Home</a>
@@ -419,7 +400,6 @@ body { font-family: 'Comfortaa', sans-serif; background: #fff; color: var(--text
         <a href="https://raradhaba.in" target="_blank" rel="noopener" class="footer-link">raradhaba.in</a>
       </div>
 
-      <!-- Hours -->
       <div>
         <div class="footer-section-title">Operating Hours</div>
         <div class="open-badge" style="display:inline-flex;margin-bottom:16px;">
@@ -429,7 +409,6 @@ body { font-family: 'Comfortaa', sans-serif; background: #fff; color: var(--text
         <p style="font-size:0.8rem;color:#666;line-height:1.6;">We never close. Day or night, rain or shine — RARA Dhaba is always ready to serve you fresh, hot, authentic Indian food.</p>
       </div>
 
-      <!-- Contact -->
       <div>
         <div class="footer-section-title">Get In Touch</div>
         <div class="contact-row">
@@ -460,32 +439,36 @@ body { font-family: 'Comfortaa', sans-serif; background: #fff; color: var(--text
 </footer>
 
 <script>
-// ========= MENU DATA — per-item image mapping =========
+// ========= MENU DATA — Real Food Unsplash Image Mapping =========
 var menuItems = [
   // 1. MURTHAL PARATHA
-  {cat:'paratha',label:'MURTHAL PARATHA',name:'Aloo Paratha',price:'₹99',img:'https://images.unsplash.com/photo-1626132647523-66f5bf380027?auto=format&fit=crop&w=300&q=80'},
-  {cat:'paratha',label:'MURTHAL PARATHA',name:'Aloo Pyaaz Paratha',price:'₹110',img:'https://images.unsplash.com/photo-1601050690597-df056fb4ce78?auto=format&fit=crop&w=300&q=80'},
+  {cat:'paratha',label:'MURTHAL PARATHA',name:'Aloo Paratha',price:'₹99',img:'https://images.unsplash.com/photo-1601050690597-df056fb4ce78?auto=format&fit=crop&w=300&q=80'},
+  {cat:'paratha',label:'MURTHAL PARATHA',name:'Aloo Pyaaz Paratha',price:'₹110',img:'https://images.unsplash.com/photo-1626132647523-66f5bf380027?auto=format&fit=crop&w=300&q=80'},
   {cat:'paratha',label:'MURTHAL PARATHA',name:'Mixed Paratha',price:'₹120',img:'https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=300&q=80'},
   {cat:'paratha',label:'MURTHAL PARATHA',name:'Gobhi Paratha',price:'₹110',img:'https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&w=300&q=80'},
   {cat:'paratha',label:'MURTHAL PARATHA',name:'Paneer Paratha',price:'₹130',img:'https://images.unsplash.com/photo-1606491956689-2ea866880c84?auto=format&fit=crop&w=300&q=80'},
+  
   // 2. DIL SE DESI SNACKS
   {cat:'snacks',label:'DIL SE DESI SNACKS',name:'Chhole Bhature',price:'₹150',img:'https://images.unsplash.com/photo-1626132647523-66f5bf380027?auto=format&fit=crop&w=300&q=80'},
   {cat:'snacks',label:'DIL SE DESI SNACKS',name:'Puri Sabzi',price:'₹150',img:'https://images.unsplash.com/photo-1601050690597-df056fb4ce78?auto=format&fit=crop&w=300&q=80'},
   {cat:'snacks',label:'DIL SE DESI SNACKS',name:'Pav Bhaji',price:'₹150',img:'https://images.unsplash.com/photo-1627308595229-7830a5c91f9f?auto=format&fit=crop&w=300&q=80'},
   {cat:'snacks',label:'DIL SE DESI SNACKS',name:'Veg Pakoda',price:'₹130',img:'https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?auto=format&fit=crop&w=300&q=80'},
   {cat:'snacks',label:'DIL SE DESI SNACKS',name:'Paneer Pakoda',price:'₹150',img:'https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=300&q=80'},
+  
   // 3. SANDWICH
   {cat:'sandwich',label:'SANDWICH',name:'Butter Toast',price:'₹80',img:'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=300&q=80'},
   {cat:'sandwich',label:'SANDWICH',name:'Veg Ungrilled Sandwich',price:'₹100',img:'https://images.unsplash.com/photo-1509722747041-616f39b57569?auto=format&fit=crop&w=300&q=80'},
   {cat:'sandwich',label:'SANDWICH',name:'Veg Grilled Sandwich',price:'₹130',img:'https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=300&q=80'},
   {cat:'sandwich',label:'SANDWICH',name:'Paneer Grilled Sandwich',price:'₹160',img:'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=300&q=80'},
+  
   // 4. CHAAP
-  {cat:'chaap',label:'CHAAP',name:'Malai Chaap',price:'₹240',img:'https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?auto=format&fit=crop&w=300&q=80'},
-  {cat:'chaap',label:'CHAAP',name:'Afghani Chaap',price:'₹240',img:'https://images.unsplash.com/photo-1608897013039-887f21d8c804?auto=format&fit=crop&w=300&q=80'},
+  {cat:'chaap',label:'CHAAP',name:'Malai Chaap',price:'₹240',img:'https://images.unsplash.com/photo-1608897013039-887f21d8c804?auto=format&fit=crop&w=300&q=80'},
+  {cat:'chaap',label:'CHAAP',name:'Afghani Chaap',price:'₹240',img:'https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?auto=format&fit=crop&w=300&q=80'},
   {cat:'chaap',label:'CHAAP',name:'Haryali Chaap',price:'₹240',img:'https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=300&q=80'},
   {cat:'chaap',label:'CHAAP',name:'Achari Chaap',price:'₹240',img:'https://images.unsplash.com/photo-1633945274405-b6c8069047b0?auto=format&fit=crop&w=300&q=80'},
   {cat:'chaap',label:'CHAAP',name:'Stuffed Chaap',price:'₹240',img:'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=300&q=80'},
   {cat:'chaap',label:'CHAAP',name:'Tandoori Chaap',price:'₹240',img:'https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?auto=format&fit=crop&w=300&q=80'},
+  
   // 5. SOUP
   {cat:'soup',label:'SOUP',name:'Tomato Soup',price:'₹110',img:'https://images.unsplash.com/photo-1547592165-e1d17fed6005?auto=format&fit=crop&w=300&q=80'},
   {cat:'soup',label:'SOUP',name:'Veg Soup',price:'₹110',img:'https://images.unsplash.com/photo-1541832676-9b763b0239ab?auto=format&fit=crop&w=300&q=80'},
@@ -493,6 +476,7 @@ var menuItems = [
   {cat:'soup',label:'SOUP',name:'Hot & Sour Soup',price:'₹140',img:'https://images.unsplash.com/photo-1541832676-9b763b0239ab?auto=format&fit=crop&w=300&q=80'},
   {cat:'soup',label:'SOUP',name:'Manchow Soup',price:'₹140',img:'https://images.unsplash.com/photo-1547592165-e1d17fed6005?auto=format&fit=crop&w=300&q=80'},
   {cat:'soup',label:'SOUP',name:'Mushroom Soup',price:'₹140',img:'https://images.unsplash.com/photo-1547592165-e1d17fed6005?auto=format&fit=crop&w=300&q=80'},
+  
   // 6. RARA SPECIAL CHINESE
   {cat:'chinese',label:'RARA SPECIAL CHINESE',name:'Crispy Corn',price:'₹220',img:'https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=300&q=80'},
   {cat:'chinese',label:'RARA SPECIAL CHINESE',name:'Crispy Chana',price:'₹190',img:'https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=300&q=80'},
@@ -504,17 +488,20 @@ var menuItems = [
   {cat:'chinese',label:'RARA SPECIAL CHINESE',name:'Veg Cocktail Kebab',price:'₹220',img:'https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?auto=format&fit=crop&w=300&q=80'},
   {cat:'chinese',label:'RARA SPECIAL CHINESE',name:'Paneer Papdi',price:'₹350',img:'https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=300&q=80'},
   {cat:'chinese',label:'RARA SPECIAL CHINESE',name:'Chinese Platter',price:'₹350',img:'https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=300&q=80'},
+  
   // 7. MANCHURIAN
-  {cat:'manchurian',label:'MANCHURIAN',name:'Veg Manchurian Dry',price:'₹190',img:'https://images.unsplash.com/photo-1626132647523-66f5bf380027?auto=format&fit=crop&w=300&q=80'},
-  {cat:'manchurian',label:'MANCHURIAN',name:'Veg Manchurian Gravy',price:'₹210',img:'https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=300&q=80'},
+  {cat:'manchurian',label:'MANCHURIAN',name:'Veg Manchurian Dry',price:'₹190',img:'https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=300&q=80'},
+  {cat:'manchurian',label:'MANCHURIAN',name:'Veg Manchurian Gravy',price:'₹210',img:'https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=300&q=80'},
   {cat:'manchurian',label:'MANCHURIAN',name:'Paneer Manchurian Dry',price:'₹290',img:'https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=300&q=80'},
   {cat:'manchurian',label:'MANCHURIAN',name:'Paneer Manchurian Gravy',price:'₹310',img:'https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=300&q=80'},
+  
   // 8. CHOWMIN
   {cat:'chowmin',label:'CHOWMIN',name:'Veg Noodles',price:'₹140',img:'https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=300&q=80'},
-  {cat:'chowmin',label:'CHOWMIN',name:'Hakka Noodles',price:'₹160',img:'https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=300&q=80'},
+  {cat:'chowmin',label:'CHOWMIN',name:'Hakka Noodles',price:'₹160',img:'https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=300&q=80'},
   {cat:'chowmin',label:'CHOWMIN',name:'Singapuri Noodles',price:'₹160',img:'https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=300&q=80'},
   {cat:'chowmin',label:'CHOWMIN',name:'Paneer Noodles',price:'₹170',img:'https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=300&q=80'},
   {cat:'chowmin',label:'CHOWMIN',name:'Special RARA Noodles',price:'₹180',img:'https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&w=300&q=80'},
+  
   // 9. SIZZLERS & KEBABS
   {cat:'sizzlers',label:'SIZZLERS & KEBABS',name:'Paneer Tikka',price:'₹300',img:'https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?auto=format&fit=crop&w=300&q=80'},
   {cat:'sizzlers',label:'SIZZLERS & KEBABS',name:'Paneer Malai Tikka',price:'₹320',img:'https://images.unsplash.com/photo-1608897013039-887f21d8c804?auto=format&fit=crop&w=300&q=80'},
@@ -525,8 +512,9 @@ var menuItems = [
   {cat:'sizzlers',label:'SIZZLERS & KEBABS',name:'Dahi Kebab',price:'₹300',img:'https://images.unsplash.com/photo-1608897013039-887f21d8c804?auto=format&fit=crop&w=300&q=80'},
   {cat:'sizzlers',label:'SIZZLERS & KEBABS',name:'Haryali Kebab',price:'₹190',img:'https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=300&q=80'},
   {cat:'sizzlers',label:'SIZZLERS & KEBABS',name:'Indian Sizzler Platter',price:'₹350',img:'https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?auto=format&fit=crop&w=300&q=80'},
+  
   // 10. SUBZI SHAHI
-  {cat:'maincourse',label:'SUBZI SHAHI',name:'Malai Kofta',price:'₹290',img:'https://images.unsplash.com/photo-1601050690597-df056fb4ce78?auto=format&fit=crop&w=300&q=80'},
+  {cat:'maincourse',label:'SUBZI SHAHI',name:'Malai Kofta',price:'₹290',img:'https://images.unsplash.com/photo-1585938338392-50a59970d2ee?auto=format&fit=crop&w=300&q=80'},
   {cat:'maincourse',label:'SUBZI SHAHI',name:'Dum Aloo Kashmiri',price:'₹280',img:'https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=300&q=80'},
   {cat:'maincourse',label:'SUBZI SHAHI',name:'Aloo Jeera',price:'₹190',img:'https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&w=300&q=80'},
   {cat:'maincourse',label:'SUBZI SHAHI',name:'Mix Veg',price:'₹280',img:'https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=300&q=80'},
@@ -537,7 +525,8 @@ var menuItems = [
   {cat:'maincourse',label:'SUBZI SHAHI',name:'Aloo Gobhi',price:'₹200',img:'https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&w=300&q=80'},
   {cat:'maincourse',label:'SUBZI SHAHI',name:'Sarso ka Saag (Seasonal)',price:'₹280',img:'https://images.unsplash.com/photo-1601050690597-df056fb4ce78?auto=format&fit=crop&w=300&q=80'},
   {cat:'maincourse',label:'SUBZI SHAHI',name:'Gatta Masala',price:'₹280',img:'https://images.unsplash.com/photo-1565557623262-b51c2513a641?auto=format&fit=crop&w=300&q=80'},
-  {cat:'maincourse',label:'SUBZI SHAHI',name:'Sev Bhaji',price:'₹280',img:'https://images.unsplash.com/photo-1626132647523-66f5bf380027?auto=format&fit=crop&w=300&q=80'},
+  {cat:'maincourse',label:'SUBZI SHAHI',name:'Sev Bhaji',price:'₹280',img:'https://images.unsplash.com/photo-1585938338392-50a59970d2ee?auto=format&fit=crop&w=300&q=80'},
+  
   // 11. PANEER KHAZANA
   {cat:'paneer',label:'PANEER KHAZANA',name:'Shahi Paneer',price:'₹300',img:'https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=300&q=80'},
   {cat:'paneer',label:'PANEER KHAZANA',name:'Kadhai Paneer',price:'₹350',img:'https://images.unsplash.com/photo-1601050690597-df056fb4ce78?auto=format&fit=crop&w=300&q=80'},
@@ -546,11 +535,13 @@ var menuItems = [
   {cat:'paneer',label:'PANEER KHAZANA',name:'Paneer Lababdar',price:'₹320',img:'https://images.unsplash.com/photo-1606491956689-2ea866880c84?auto=format&fit=crop&w=300&q=80'},
   {cat:'paneer',label:'PANEER KHAZANA',name:'Paneer Bhurji',price:'₹320',img:'https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=300&q=80'},
   {cat:'paneer',label:'PANEER KHAZANA',name:'Paneer Methi Malai',price:'₹350',img:'https://images.unsplash.com/photo-1601050690597-df056fb4ce78?auto=format&fit=crop&w=300&q=80'},
+  
   // 12. DAAL DUMDAR
   {cat:'daal',label:'DAAL DUMDAR',name:'Daal Tadka',price:'₹190',img:'https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=300&q=80'},
   {cat:'daal',label:'DAAL DUMDAR',name:'Daal Handi',price:'₹220',img:'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=300&q=80'},
   {cat:'daal',label:'DAAL DUMDAR',name:'Daal Makhni',price:'₹290',img:'https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=300&q=80'},
   {cat:'daal',label:'DAAL DUMDAR',name:'Daal Bukhara',price:'₹320',img:'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=300&q=80'},
+  
   // 13. FRIED RICE & BIRYANI
   {cat:'rice',label:'RICE & BIRYANI',name:'Veg Fried Rice',price:'₹170',img:'https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=300&q=80'},
   {cat:'rice',label:'RICE & BIRYANI',name:'Paneer Fried Rice',price:'₹190',img:'https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=300&q=80'},
@@ -559,11 +550,13 @@ var menuItems = [
   {cat:'rice',label:'RICE & BIRYANI',name:'Veg Biryani + Raita',price:'₹280',img:'https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=300&q=80'},
   {cat:'rice',label:'RICE & BIRYANI',name:'Veg Dum Biryani + Raita',price:'₹300',img:'https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=300&q=80'},
   {cat:'rice',label:'RICE & BIRYANI',name:'Hyderabadi Biryani + Raita',price:'₹330',img:'https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=300&q=80'},
+  
   // 14. POTATO PATTAKA
   {cat:'potato',label:'POTATO PATTAKA',name:'French Fries',price:'₹140',img:'https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=300&q=80'},
   {cat:'potato',label:'POTATO PATTAKA',name:'Honey Chilli Potato',price:'₹190',img:'https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=300&q=80'},
   {cat:'potato',label:'POTATO PATTAKA',name:'Chilli Potato',price:'₹170',img:'https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=300&q=80'},
   {cat:'potato',label:'POTATO PATTAKA',name:'Paneer Chilli Potato',price:'₹220',img:'https://images.unsplash.com/photo-1631452180519-c014fe946bc7?auto=format&fit=crop&w=300&q=80'},
+  
   // 15. RAITA & SALAD
   {cat:'raita',label:'RAITA & SALAD',name:'Plain Dahi',price:'₹90',img:'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=300&q=80'},
   {cat:'raita',label:'RAITA & SALAD',name:'Mixed Raita',price:'₹130',img:'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=300&q=80'},
@@ -572,6 +565,7 @@ var menuItems = [
   {cat:'raita',label:'RAITA & SALAD',name:'Green Salad',price:'₹90',img:'https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=300&q=80'},
   {cat:'raita',label:'RAITA & SALAD',name:'Cucumber Salad',price:'₹80',img:'https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=300&q=80'},
   {cat:'raita',label:'RAITA & SALAD',name:'Russian Salad',price:'₹140',img:'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=300&q=80'},
+  
   // 16. SHAKES & MOJITO
   {cat:'shakes',label:'SHAKES & MOJITO',name:'Vanilla Shake',price:'₹120',img:'https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=300&q=80'},
   {cat:'shakes',label:'SHAKES & MOJITO',name:'Butterscotch Shake',price:'₹130',img:'https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=300&q=80'},
@@ -580,16 +574,19 @@ var menuItems = [
   {cat:'shakes',label:'SHAKES & MOJITO',name:'Mint Mojito',price:'₹120',img:'https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=300&q=80'},
   {cat:'shakes',label:'SHAKES & MOJITO',name:'Watermelon Mojito',price:'₹130',img:'https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=300&q=80'},
   {cat:'shakes',label:'SHAKES & MOJITO',name:'Masala Lemonade Mojito',price:'₹130',img:'https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=300&q=80'},
+  
   // 17. LASSI & COFFEE
   {cat:'lassi',label:'LASSI & COFFEE',name:'Black Coffee',price:'₹40',img:'https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=300&q=80'},
   {cat:'lassi',label:'LASSI & COFFEE',name:'Hot Coffee',price:'₹50',img:'https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=300&q=80'},
   {cat:'lassi',label:'LASSI & COFFEE',name:'Cold Coffee',price:'₹130',img:'https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=300&q=80'},
   {cat:'lassi',label:'LASSI & COFFEE',name:'Sweet / Masala Lassi',price:'₹100',img:'https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=300&q=80'},
+  
   // 18. CHAI VAI...
   {cat:'chai',label:'CHAI VAI...',name:'Special Masala Tea',price:'₹35',img:'https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=300&q=80'},
   {cat:'chai',label:'CHAI VAI...',name:'Kulhad Tea',price:'₹50',img:'https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=300&q=80'},
   {cat:'chai',label:'CHAI VAI...',name:'Lemon Tea',price:'₹60',img:'https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=300&q=80'},
   {cat:'chai',label:'CHAI VAI...',name:'Black Tea',price:'₹60',img:'https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=300&q=80'},
+  
   // 19. SWEET SENSATIONS
   {cat:'desserts',label:'SWEET SENSATIONS',name:'Gulab Jamun',price:'₹90',img:'https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&w=300&q=80'},
   {cat:'desserts',label:'SWEET SENSATIONS',name:'Thandi Kheer',price:'₹110',img:'https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&w=300&q=80'},
